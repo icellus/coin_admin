@@ -19,7 +19,7 @@ class HomeController extends Controller
 	}
 
 	public function index () {
-    	$response = $this->api->get_balance();
+    	$response = $this->api->get_account_balance();
     	dd($response);
     	$data = $response->data->list;
 

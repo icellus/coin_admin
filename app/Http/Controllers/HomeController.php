@@ -20,7 +20,6 @@ class HomeController extends Controller
 
 	public function index () {
     	$response = $this->api->get_account_balance();
-    	dd($response);
     	$data = $response->data->list;
 
     	$info = [];
@@ -29,6 +28,15 @@ class HomeController extends Controller
     			$info[] = $v;
 			}
 		}
-		dump($info);
+	}
+
+
+
+	#
+	public function getAccount () {
+
+		$accountId = $this->api->get_account_accounts();
+		dump($accountId);
+		return '';
 	}
 }

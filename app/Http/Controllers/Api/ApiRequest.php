@@ -13,8 +13,7 @@ class ApiRequest {
 	private $accessKey = '';
 	private $secretKey = '';
 	public function __construct() {
-//		$this->accountId = config('admin.account_id');
-		$this->accountId = '2083278';
+		$this->accountId = config('admin.account_id');
 		$this->accessKey = config('admin.access_key');
 		$this->secretKey = config('admin.secret_key');
 	}

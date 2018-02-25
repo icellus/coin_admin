@@ -18,5 +18,7 @@ Route::get('/', function () {
 
 
 Route::get('admin','HomeController@index');
+Route::get('coin','HomeController@getCoinK');
 
 
+Route::get('test','HomeController@test');
